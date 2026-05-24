@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "12f6af883b6f2f7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "eee048f3f19c21c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78c59db68fe4a593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AuthNexora/Signup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Signup"
+            }
+          },
+          {
+            "id": "59ca3bd6dca68da8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AuthNexora/ForgotPassword.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ForgotPassword"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "54973b1a3e7df3e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1fdce45cd7e9546c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "deacc70a6167ab76",
+    "type": "split",
+    "children": [
+      {
+        "id": "f788a6f95ddb2f48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e6617e7961ee9ac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "da22d241de99604b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "1a50aa21c43631bc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "14a2fe6a3914e592",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ac6d0a16401948f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7db3a1a6056093b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AuthNexora/ForgotPassword.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para ForgotPassword"
+            }
+          },
+          {
+            "id": "9adb2d4746259187",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "ca9401552bf95633",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "5fb91c11a0e69bb1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "d8f90247a83d1565",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "AuthNexora/ForgotPassword.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de ForgotPassword"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "d8f90247a83d1565",
+  "lastOpenFiles": [
+    "README.md",
+    "AuthNexora/ForgotPassword.md",
+    "AuthNexora/Fluxo de autenticação.md",
+    "AuthNexora/Signup.md",
+    "AuthNexora/Signin.md",
+    "IANexora.md",
+    "AuthNexora/cadastro.md",
+    "AuthNexora/login.md",
+    "AuthNexora/forgot-password.md",
+    "Login.md.md",
+    "AuthNexora.md",
+    "AuthNexora",
+    "Cadastro.md.md",
+    "Bem-vindo.md",
+    "crie um link.md"
+  ]
+}
