@@ -200,7 +200,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,10 +214,13 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "d8f90247a83d1565",
+  "active": "59ca3bd6dca68da8",
   "lastOpenFiles": [
-    "README.md",
+    "docker-compose.yml",
+    "Dockerfile",
+    "index.php",
     "AuthNexora/ForgotPassword.md",
+    "README.md",
     "AuthNexora/Fluxo de autenticação.md",
     "AuthNexora/Signup.md",
     "AuthNexora/Signin.md",
