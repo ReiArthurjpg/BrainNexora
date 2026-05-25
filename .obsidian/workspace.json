@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "78c59db68fe4a593",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AuthNexora/Signup.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Signup"
-            }
-          },
-          {
             "id": "59ca3bd6dca68da8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AuthNexora/ForgotPassword.md",
+                "file": "AuthNexora/♻️ Forgot Password.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ForgotPassword"
+              "title": "♻️ Forgot Password"
+            }
+          },
+          {
+            "id": "88fc61f37c3326b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AuthNexora/🔐 Auth Flow Nexora.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🔐 Auth Flow Nexora"
             }
           }
         ],
@@ -48,12 +48,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IANexora.md",
+                "file": "AuthNexora/👤 Login.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IANexora"
+              "title": "👤 Login"
             }
           }
         ]
@@ -190,13 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IANexora.md",
+                "file": "AuthNexora/👤 Login.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de IANexora"
+              "title": "Sumário de 👤 Login"
             }
           }
         ],
@@ -220,17 +220,21 @@
   },
   "active": "1fdce45cd7e9546c",
   "lastOpenFiles": [
-    "AuthNexora/Fluxo de autenticação.md",
-    "AuthNexora/ForgotPassword.md",
+    "AuthNexora/🔐 Auth Flow Nexora.md",
+    "AuthNexora/🔒 Recuperação de Acesso.md",
+    "IANexora.md",
+    "AuthNexora/♻️ Forgot Password.md",
+    "AuthNexora/login/👤 Cadastro.md",
+    "AuthNexora/📝 Signup.md",
+    "AuthNexora/login",
+    "guest",
+    "AuthNexora/🔑 Authentication.md",
+    "AuthNexora/👤 Login.md",
+    "index.php",
     "docker-compose.yml",
     "Dockerfile",
-    "index.php",
     "README.md",
-    "AuthNexora/Signup.md",
-    "AuthNexora/Signin.md",
-    "IANexora.md",
     "AuthNexora/cadastro.md",
-    "AuthNexora/login.md",
     "AuthNexora/forgot-password.md",
     "Login.md.md",
     "AuthNexora.md",
