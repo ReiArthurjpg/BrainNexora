@@ -29,7 +29,7 @@ Aqui é onde a mágica acontece para você entrar na sua conta. Você encontrar�
 Se você estiver acessando de um computador ou tablet deitado, do lado direito você verá um painel incrível que mostra o tamanho do nosso time:
 
 
-*   **🏆 Carrossel de Depoimentos**: Histórias reais de professores, alunos e donos de academia que usam o Nexora e contam como a plataforma facilitou a vida deles. Vale a pena ler para se inspirar!
+*   **🏆 Carrossel de Depoimentos**: Histórias reais de professores, alunos e donos de academia que usam o Nexora e contam como a plataforma facilitou a vida deles. Vale a pena ler para se inspirar!c
 *   **📈 Nossos Números no Tatame Digital**:
     *   **👥 10k+ Usuários Ativos**: Mais de dez mil apaixonados pela arte suave evoluindo com a gente todos os dias!
     *   **⚡ 2M+ Check-ins**: Mais de 2 milhões de presenças marcadas em treinos e seminários ao redor do mundo.

@@ -4,56 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "eee048f3f19c21c2",
+        "id": "5e93b9c7881054fe",
         "type": "tabs",
         "children": [
           {
-            "id": "59ca3bd6dca68da8",
+            "id": "f0c49589b0c9a66c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AuthNexora/♻️ Forgot Password.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "♻️ Forgot Password"
-            }
-          },
-          {
-            "id": "88fc61f37c3326b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AuthNexora/🔐 Auth Flow Nexora.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🔐 Auth Flow Nexora"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "54973b1a3e7df3e1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "1fdce45cd7e9546c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AuthNexora/👤 Login.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "👤 Login"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
             }
           }
         ]
@@ -190,13 +151,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AuthNexora/👤 Login.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 👤 Login"
+              "title": "Sumário"
             }
           }
         ],
@@ -218,8 +178,10 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "1fdce45cd7e9546c",
+  "active": "f0c49589b0c9a66c",
   "lastOpenFiles": [
+    "AuthNexora/👤 Login.md",
+    "AuthNexora/🔑 Authentication.md",
     "AuthNexora/🔐 Auth Flow Nexora.md",
     "AuthNexora/🔒 Recuperação de Acesso.md",
     "IANexora.md",
@@ -228,8 +190,6 @@
     "AuthNexora/📝 Signup.md",
     "AuthNexora/login",
     "guest",
-    "AuthNexora/🔑 Authentication.md",
-    "AuthNexora/👤 Login.md",
     "index.php",
     "docker-compose.yml",
     "Dockerfile",
