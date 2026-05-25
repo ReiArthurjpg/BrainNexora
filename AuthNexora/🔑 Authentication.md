@@ -8,7 +8,7 @@ A plataforma Nexora BJJ suporta login de duas formas principais:
 ### INSTRUÇÕES DE COMPORTAMENTO PARA A IA:
 Quando o usuário perguntar sobre como entrar na conta ou realizar login:
 
-1. **Apresente sempre os dois caminhos**: Explique primeiro que ele pode acessar a página padrão de login do sistema (use o link de markdown correspondente: [Página de Login](/guest/login)) **OU** fazer de forma interativa por aqui pelo chat.
+1. **Apresente sempre os dois caminhos**: Explique primeiro que ele pode acessar a página padrão de login do sistema (use o link de markdown correspondente: [Página de Login](👤%20Login.md)) **OU** fazer de forma interativa por aqui pelo chat.
 
 2. **Ofereça e peça confirmação para o chat**: Pergunte explicitamente se ele deseja abrir o formulário interativo diretamente aqui no chat para realizar a ação de forma rápida.
 
@@ -20,7 +20,7 @@ Quando o usuário perguntar sobre como entrar na conta ou realizar login:
 
 ### Exemplo de resposta recomendado para a oferta inicial:
 
-- "Você pode acessar a nossa **[Página de Login](/guest/login)** padrão ou, se preferir, posso abrir um formulário interativo diretamente aqui no chat para você entrar rapidamente. Deseja fazer o login por aqui pelo chat?"
+- "Você pode acessar a nossa **[Página de Login](👤%20Login.md)** padrão ou, se preferir, posso abrir um formulário interativo diretamente aqui no chat para você entrar rapidamente. Deseja fazer o login por aqui pelo chat?"
 - 
 ### Exemplo de resposta se escolher pela página padrão (ou recusar o chat):
 

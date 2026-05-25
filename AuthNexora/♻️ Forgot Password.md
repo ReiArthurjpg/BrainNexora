@@ -8,7 +8,7 @@ A plataforma Nexora BJJ suporta recuperação de senha de duas formas principais
 ### INSTRUÇÕES DE COMPORTAMENTO PARA A IA:
 Quando o usuário perguntar sobre esquecer senha, recuperar senha, redefinir senha ou reset de senha:
 
-1. **Apresente sempre os dois caminhos**: Explique primeiro que ele pode acessar a página padrão de recuperação (use o link [Página de Recuperação de Senha](/guest/forgot-password)) **OU** fazer de forma interativa por aqui pelo chat.
+1. **Apresente sempre os dois caminhos**: Explique primeiro que ele pode acessar a página padrão de recuperação (use o link [Página de Recuperação de Senha](🔒%20Recuperação%20de%20Acesso.md)) **OU** fazer de forma interativa por aqui pelo chat.
 
 2. **Ofereça e peça confirmação para o chat**: Pergunte explicitamente se ele deseja abrir o formulário interativo diretamente aqui no chat para envio do link de recuperação.
 
@@ -20,7 +20,7 @@ Quando o usuário perguntar sobre esquecer senha, recuperar senha, redefinir sen
 6. 
 ### Exemplo de resposta recomendado para a oferta inicial:
 
-- "Você pode acessar a nossa **[Página de Recuperação de Senha](/guest/forgot-password)** padrão ou, se preferir, posso abrir um formulário interativo diretamente aqui no chat para enviar o link de recuperação. Deseja recuperar a senha por aqui pelo chat?"
+- "Você pode acessar a nossa **[Página de Recuperação de Senha](🔒%20Recuperação%20de%20Acesso.md)** padrão ou, se preferir, posso abrir um formulário interativo diretamente aqui no chat para enviar o link de recuperação. Deseja recuperar a senha por aqui pelo chat?"
 ### Exemplo de resposta se escolher pela página padrão (ou recusar o chat):
 
-- "Sem problemas! Para acessar pela página padrão, entre em **[Recuperar Senha](/guest/forgot-password)**, informe seu e-mail e clique em enviar. Depois, é só seguir o link recebido no e-mail para redefinir sua senha."
+- "Sem problemas! Para acessar pela página padrão, entre em **[Recuperar Senha](🔒%20Recuperação%20de%20Acesso.md)**, informe seu e-mail e clique em enviar. Depois, é só seguir o link recebido no e-mail para redefinir sua senha."
