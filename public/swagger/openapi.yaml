@@ -1,0 +1,109 @@
+openapi: 3.0.3
+info:
+  title: BrainNexora
+  version: 1.0.0
+  description: API REST para busca em documentação Markdown do vault Obsidian. Recebe perguntas em linguagem natural e retorna os documentos mais relevantes.
+servers:
+  - url: http://localhost:8083
+    description: Docker Local
+  - url: http://localhost/brainNexora/public
+    description: XAMPP Local
+paths:
+  /api/health:
+    get:
+      summary: Health check
+      description: Retorna status da API.
+      responses:
+        '200':
+          description: API online
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+              example:
+                success: true
+                message: API online.
+                data:
+                  status: ok
+  /api/search:
+    get:
+      summary: Busca por pergunta nos documentos .md
+      description: |
+        Recebe uma pergunta em linguagem natural (ex: "Como faço para realizar login com o google?"),
+        extrai keywords, busca em todos os arquivos `.md` do vault e retorna os documentos mais
+        relevantes ordenados por quantidade de matches.
+      parameters:
+        - name: query
+          in: query
+          required: true
+          description: Pergunta ou termo de busca em linguagem natural.
+          schema:
+            type: string
+          example: Como faço para realizar login com o google?
+        - name: limit
+          in: query
+          required: false
+          description: Número máximo de resultados (padrão 5, máximo 50).
+          schema:
+            type: integer
+            default: 5
+            minimum: 1
+            maximum: 50
+          example: 5
+      responses:
+        '200':
+          description: Resultados da busca
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessResponse'
+              example:
+                success: true
+                message: Busca realizada com sucesso.
+                data:
+                  query: Como faço para realizar login com o google?
+                  total: 2
+                  results:
+                    - id: abc123def456
+                      title: "👤 Login"
+                      content: "# Login\n\nDocumentação sobre login..."
+                      matchCount: 3
+                    - id: def789ghi012
+                      title: "🔑 Authentication"
+                      content: "# Authentication\n\nFluxo de autenticação..."
+                      matchCount: 2
+        '422':
+          description: Parâmetro query ausente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                success: false
+                message: O parâmetro "query" é obrigatório.
+                errors:
+                  query: Informe uma pergunta ou termo de busca.
+components:
+  schemas:
+    SuccessResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        message:
+          type: string
+        data:
+          type: object
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+        errors:
+          type: object
+          additionalProperties:
+            type: string

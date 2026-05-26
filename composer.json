@@ -1,0 +1,14 @@
+{
+  "name": "brainnexora/knowledge-search-api",
+  "description": "API REST em PHP puro para busca em documentação Markdown do vault Obsidian",
+  "type": "project",
+  "require": {
+    "php": "^8.1",
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
