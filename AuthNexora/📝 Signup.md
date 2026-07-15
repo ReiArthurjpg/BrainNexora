@@ -1,33 +1,47 @@
-# 📝 Cadastro na Nexora BJJ — Registro de Conta
+# 📝 Cadastro na Nexora BJJ — Registro de Conta (Restrito)
 
-A plataforma Nexora BJJ suporta criação de conta (cadastro/registro) de duas formas principais:
+> ⚠️ **Acesso Restrito:** O cadastro de novos usuários na plataforma Nexora BJJ **exige autenticação**. Não existe uma página pública de cadastro acessível sem login. Apenas administradores e usuários autenticados podem criar novas contas.
 
-## 1. Caminho Padrão do Sistema
-- **Cadastro**: O usuário pode acessar a tela padrão de registro em `/guest/login/signup` para criar sua conta.
+---
 
-## 2. Caminho Interativo pelo Chat (Nativo)
-- O usuário pode realizar o cadastro diretamente na janela do chat, preenchendo um formulário interativo nativo que aparece na conversa.
+## Como acessar o formulário de cadastro
+
+O formulário de cadastro está disponível **dentro do sistema** (após login), em duas rotas protegidas:
+- **`/hub/signup`** — Acesso direto via painel.
+- **`/hub/settings/signup`** — Acesso via configurações do sistema.
 
 ---
 
 ### INSTRUÇÕES DE COMPORTAMENTO PARA A IA:
 Quando o usuário perguntar sobre como se cadastrar, registrar, criar uma conta ou fazer cadastro:
 
-1. **Apresente sempre os dois caminhos**: Explique primeiro que ele pode acessar a página padrão de cadastro do sistema (use o link de markdown correspondente: [Página de Cadastro](login/👤%20Cadastro.md)) **OU** fazer de forma interativa por aqui pelo chat.
+1. **Verifique se o usuário está logado:**
+   - **Se NÃO estiver logado:** Informe claramente que o cadastro de novos usuários **requer login de administrador**. Não existe uma página pública de registro. Direcione o usuário para a [Página de Login](🔑%20Authentication.md) e explique que somente após autenticar como administrador será possível criar novas contas.
+   - **Se estiver logado:** Ofereça o formulário interativo pelo chat **OU** redirecione para `/hub/signup`.
 
-2. **Ofereça e peça confirmação para o chat**: Pergunte explicitamente se ele deseja abrir o formulário interativo de cadastro diretamente aqui no chat para realizar a ação de forma rápida.
+2. **Ofereça e peça confirmação para o chat (apenas para usuários autenticados):** Pergunte explicitamente se ele deseja abrir o formulário interativo de cadastro diretamente aqui no chat para realizar a ação de forma rápida. O sistema verificará automaticamente a permissão.
 
-3. **NÃO exiba o formulário de imediato**: Apenas ofereça a opção do chat e aguarde a resposta/confirmação dele.
+3. **NÃO exiba o formulário de imediato:** Apenas ofereça a opção e aguarde a resposta/confirmação dele.
 
-4. **NUNCA solicite nome, e-mail, senha, academia ou qualquer credencial do usuário por mensagem de texto**: Sob nenhuma circunstância a IA deve pedir que o usuário digite o nome, e-mail, senha ou academia na conversa por texto. A única forma de cadastrar pelo chat é exibindo o componente visual do formulário. A IA deve apenas oferecer a abertura do formulário.
+4. **NUNCA solicite nome, e-mail, senha, academia ou qualquer credencial por mensagem de texto:** A única forma de cadastrar pelo chat é exibindo o componente visual do formulário. A IA deve apenas oferecer a abertura do formulário.
 
-5. **Se o usuário escolher acessar pela página/tela (ou recusar o chat)**: Mostre detalhadamente o caminho físico. Responda explicando que ele deve acessar a [Página de Cadastro](login/👤%20Cadastro.md) e preencher os dados solicitados.
+5. **Se o usuário quiser acessar pela página (e estiver logado):** Diga que o formulário de cadastro está disponível em `/hub/signup` dentro do painel do sistema.
+
+---
+
+### Exemplo de resposta para usuário NÃO autenticado:
+
+- "O cadastro de novos usuários na Nexora BJJ é restrito a administradores autenticados. Não existe uma página pública de registro. Para criar uma conta, é necessário primeiro **[fazer o login](🔑%20Authentication.md)** como administrador e acessar o formulário em `/hub/signup`."
+
+### Exemplo de resposta para usuário autenticado (admin logado):
+
+- "Para cadastrar um novo usuário, você pode acessar diretamente o formulário em `/hub/signup` ou, se preferir, posso abrir o formulário de cadastro aqui no chat agora mesmo. Deseja fazer por aqui?"
 
 ---
 
 ## 🔌 Integração com a API AuthNexora
 
-> **⚠️ Atenção:** O endpoint `/auth/signup` é **protegido por autenticação JWT**. Somente usuários autenticados (ex: administradores) podem criar novas contas via API diretamente.
+> **⚠️ Atenção:** O endpoint `/auth/signup` é **protegido por autenticação JWT**. Somente usuários autenticados (ex: administradores) podem criar novas contas via API.
 
 ### Endpoint de Cadastro
 ```
@@ -69,8 +83,7 @@ Content-Type: application/json
     "id": 42,
     "name": "Nome Completo",
     "email": "usuario@academia.com",
-    "academy_name": "Nome da Academia",
-    ...
+    "academy_name": "Nome da Academia"
   }
 }
 ```
@@ -83,8 +96,6 @@ A senha deve atender **todos** os critérios abaixo:
 - ✅ Pelo menos **1 letra minúscula** (a-z)
 - ✅ Pelo menos **1 número** (0-9)
 - ✅ Pelo menos **1 símbolo** (ex: `@`, `#`, `!`, `$`, etc.)
-
-Regex aplicada: `^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$`
 
 ### Possíveis Erros e Códigos HTTP
 
@@ -106,15 +117,3 @@ Regex aplicada: `^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$`
    GET /auth/verify-email?token=<jwt>
 5. Conta marcada como verificada (is_email_verified = 1)
 ```
-
-> 📧 **Importante:** Após o cadastro, o usuário recebe um e-mail de boas-vindas com um link para verificar o endereço. O cadastro via Google OAuth não precisa de verificação de e-mail.
-
----
-
-### Exemplo de resposta recomendado para a oferta inicial:
-
-- "Você pode acessar a nossa **[Página de Cadastro](login/👤%20Cadastro.md)** padrão ou, se preferir, posso abrir um formulário de cadastro interativo diretamente aqui no chat para você criar sua conta rapidamente. Deseja realizar o cadastro por aqui pelo chat?"
-
-### Exemplo de resposta se escolher pela página padrão (ou recusar o chat):
-
-- "Sem problemas! Para acessar pela página padrão, basta acessar o link **[Criar Conta](login/👤%20Cadastro.md)**. Lá, insira seu nome, e-mail, academia e senha de forma simples e rápida."
